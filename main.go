@@ -9,5 +9,8 @@ func main() {
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{"message": "successful"})
 	})
+	r.GET("/first", func(c *gin.Context) {
+		c.JSON(200, gin.H{"message": "自动编译成功配置"})
+	})
 	r.Run(":8081")
 }
